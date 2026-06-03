@@ -128,19 +128,19 @@ Proyecto desarrollado durante el ciclo formativo de Desarrollo de Aplicaciones M
 
 ## Ventana principal
 
-![Ventana principal](capturas/principal.png)
+![Ventana principal](capturas/principal.JPG)
 
 ## Nuevo contacto
 
-![Nuevo contacto](capturas/alta.png)
+![Nuevo contacto](capturas/alta.JPG)
 
 ## Eliminar contacto
 
-![Eliminar contacto](capturas/eliminar.png)
+![Eliminar contacto](capturas/eliminar.JPG)
 
 ## Confirmar eliminación contacto
 
-![Confirmar eliminación contacto](capturas/eliminar.png)
+![Confirmar eliminación contacto](capturas/eliminar.JPG)
 
 
 
