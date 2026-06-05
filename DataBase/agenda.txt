@@ -1,0 +1,40 @@
+-- Tabla de amigos
+
+CREATE TABLE AMIGOS (
+nombre VARCHAR2(20),
+telefono NUMBER,
+fecha_cumple DATE NOT NULL,
+tipo VARCHAR2(20) DEFAULT 'Amigos',
+CONSTRAINT pk_amigos PRIMARY KEY (nombre)
+);
+
+-- Tabla de profesionales
+
+CREATE TABLE PROFESIONALES (
+nombre VARCHAR2(20),
+telefono NUMBER,
+empresa VARCHAR2(20) NOT NULL,
+tipo VARCHAR2(20) DEFAULT 'Profesionales',
+CONSTRAINT pk_profesionales PRIMARY KEY (nombre)
+);
+
+-- Vista unificada de contactos
+
+CREATE VIEW CONTACTOS AS
+SELECT
+nombre,
+telefono,
+fecha_cumple AS fecha,
+NULL AS empresa,
+tipo
+FROM AMIGOS
+
+UNION ALL
+
+SELECT
+nombre,
+telefono,
+NULL AS fecha,
+empresa,
+tipo
+FROM PROFESIONALES;
