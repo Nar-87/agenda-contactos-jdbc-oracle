@@ -6,6 +6,21 @@ Aplicación de escritorio desarrollada en Java para la gestión de contactos per
 
 El proyecto utiliza una arquitectura MVC (Modelo - Vista - Controlador), acceso a base de datos Oracle mediante JDBC y una interfaz gráfica desarrollada con AWT.
 
+## Base de datos
+
+El proyecto utiliza Oracle Database.
+
+La estructura de la base de datos se encuentra en:
+
+database/agenda.sql
+
+La aplicación gestiona dos tipos de contactos:
+
+- Amigos
+- Profesionales
+
+Ambos se unifican mediante la vista CONTACTOS utilizada por la capa JDBC.
+
 ## Funcionalidades
 
 ### Gestión de contactos
